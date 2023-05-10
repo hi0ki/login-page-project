@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/img/blue-background.jpg);
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.login {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right {
+  width: 35%;
+  height: 600px;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  overflow: hidden;
+  justify-content: cente;
+  align-items: center;
+  position: relative;
+}
+
+.login form h2 {
+  position: absolute;
+  top: 25px;
+  left: 70px;
+  font-size: 60px;
+  text-transform: capitalize;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: -50px;
+  bottom: 3px;
+}
+
+.input {
+  position: relative;
+}
+
+.input input {
+  width: 400px;
+  margin: 40px 0 0 10px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid grey;
+  outline: none;
+  font-size: 15px;
+}
+
+.input label {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: rgb(0, 0, 0, 0.6);
+  position: absolute;
+  left: 15px;
+  bottom: 12px;
+  cursor: text;
+}
+
+.input input:focus {
+  border-radius: 5px;
+  border: 2px solid #46a5d1;
+  box-shadow: 1px 1px 10px -2px #46a5d1, -1px -1px 5px -2px #46a5d1;
+}
+
+.input input:focus~label,
+.input input:valid~label {
+  position: absolute;
+  bottom: 40px;
+  color: black;
+  font-weight: normal;
+}
+
+.check input {
+  opacity: 0;
+  margin: 35px 0 0 10px;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  display: inline-block;
+  color: red;
+  line-height: 25px;
+}
+
+.check input+label::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 385px;
+  width: 18px;
+  height: 18px;
+  outline: 2px solid rgb(78, 212, 78);
+  background: white;
+}
+
+.check label {
+  margin-left: 10px;
+  text-transform: capitalize;
+}
+
+.check input:checked+label::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 385px;
+  width: 18px;
+  height: 18px;
+  outline: 3px solid rgb(78, 212, 78);
+  background-image: url(/img/check-icon.png);
+  background-size: contain;
+  color: rgb(78, 212, 78);
+}
+
+.submit {
+  position: relative;
+}
+
+.submit input {
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: capitalize;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  background: rgb(79, 162, 204);
+  background: linear-gradient(45deg, rgba(79, 162, 204, 1) 0%, rgba(82, 165, 206, 1) 25%, rgba(15, 90, 154, 1) 72%);
+}
+
+.submit p {
+  position: absolute;
+  bottom: -120px;
+  left: 165px;
+  color: black;
+  text-transform: capitalize;
+  font-size: 17px;
+}
+
+
+.left {
+  background-color: blue;
+  height: 650px;
+  width: 45%;
+}
